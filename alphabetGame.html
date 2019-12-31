@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Vietnamese Alphabet</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+  /*
+    @font-face {
+      font-family: 'Roboto';
+      src: url('./resources/fonts/Roboto/Roboto-Regular.ttf');
+    }
+    */
+    h2 {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+        text-shadow: 4px 4px 4px #aaa;
+      }
+
+      body {
+        background: white;
+      }
+
+      canvas {
+        border: solid .2em black;
+      }
+  </style>
+</head>
+
+<body>
+  <h2>Vietnamese Alphabet</h2>
+
+    <canvas id="alphabetGame" width="480" height="320"></canvas>
+    </br><div id="stars">Last Achievement: </div>
+    <!-- Load generic game constants -->
+    <script src="JS/objects/constants.js"></script>
+
+    <!--Load misc helper objects and utils -->
+    <script src="JS/misc/square.js"></script>
+    <script src="JS/misc/utils.js"></script>
+    <!-- Load sfx util objects -->
+    <script src="JS/objects/sound.js"></script>
+    <!-- Load gfx util objects -->
+    <script src="JS/objects/background.js"></script>
+    <script src="JS/objects/sprite.js"></script>
+    <script src="JS/objects/gameobject.js"></script>
+    <script src="JS/objects/gameloop.js"></script>
+    <!-- Load Game objects -->
+    <script src="JS/gameobjects/MenuObject.js"></script>
+    <script src="JS/gameobjects/explosion.js"></script>
+    <script src="JS/gameobjects/StarReward.js"></script>
+
+    <script src="JS/gameobjects/deadplane.js"></script>
+    <script src="JS/gameobjects/letterobject.js"></script>
+    <script src="JS/gameobjects/HUDobject.js"></script>
+
+    <!-- Load Room objects -->
+    <script src="JS/Rooms/StartMenuRoom.js"></script>
+    <script src="JS/Rooms/GameRoom.js"></script>
+    <!-- Load Game logic -->
+    <script src="JS/alphabetGameLogic.js"></script>
+
+    <button onclick="clearStarScore()">Reset Achievement</button>
+
+    <h3>Description</h3>
+    <p>Our friends are flying in to give us Letters.. but some of them have mixed up some letters for bombs!</p>
+    <h3>Instructions</h3>
+     <p>Click/Tap the Letter Box ( <img src="./resources/images/sprites/Crate_48.png" alt="Letter box" height="42" width="42">) as they move to the left. Only hit letters that are in the vietnamese alphabet. If you think
+       a letter is not from the alphabet, tap the pilots head <img src="./resources/images/sprites/plane/Head.png" alt="Pilot Head" height="42"> to send the plane away.
+     </br> If you tap a letter that is not in the vietnamese alphabet, it will be a bomb.
+   </br> You win when you get 29 letters correct in a row, with no wrong answers.
+   </p>
+
+     <footer>©Dallas Wilson, 2018<br>
+     </footer>
+</body>
+</html>
