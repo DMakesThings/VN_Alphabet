@@ -41,7 +41,7 @@ class HUDobject extends GameObject {
       context.font="35px Roboto";
       context.textAlign="left";
       context.textBaseline = 'top';
-      context.fillText(this.lastCharacter, 205,canvas.height-66);
+      context.fillText(this.lastCharacter, 195,canvas.height-58);
     }
   }
 
