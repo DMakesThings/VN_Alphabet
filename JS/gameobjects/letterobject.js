@@ -146,7 +146,7 @@ class LetterObject extends GameObject {
               this.clickedAway = true;
               if (vietnameseAlphabetList.includes(this.character)) {
                 this.clickedWrong = true;
-                snd_Explosion.play();
+                snd_Wrong.play();
               } else {
                 snd_Star.play();
               }

@@ -84,6 +84,7 @@ const snd_A = new Sound('./resources/sounds/A.wav');
 const snd_B = new Sound('./resources/sounds/B.wav');
 const snd_Star = new Sound('./resources/sounds/get_star_snd.wav');
 const snd_win = new Sound('./resources/sounds/crowdapplause2.wav');
+const snd_Wrong = new Sound('./resources/sounds/wrongSnd.wav');
 const snd_Explosion = new Sound('./resources/sounds/Explosion_5.wav');
 
 const snd_vn_alphabet = [];
